@@ -459,59 +459,78 @@ h4 {
     color: #579E99;
 }
 @media all and (max-width: 800px) {
+    .head {
+    width: 500px;
+    }
+    .myCard {
+    width: 200px;
+    height: 200px;
+    }
+    .about {
+    margin: auto;
+    }
+    .developer {
+    margin-left: 10px;
+    }
+    .frontSide {
+    background-size: 250px;
+    }
+    .backSide {
+    background-size: 350px;
+    }
     .box {
-        margin-left: 20px;
+    width: 300px;
+    height: 250px ;
+    padding: 5px;
+    margin-left: 20px;
     }
     .bigBox {
-        width: 350px;
-        height: 300px;
+    width: 260px;
+    height: 230px;
+    margin: auto;
     }
     .bigBox .slide .mockup {
-        width: 90px;
-        height: 150px;
+    width: 50px;
+    height: 100px;
     }
     .spisok .list .ssylka {
-        width: 40px;
-        height: 40px;
-}
+    width: 40px;
+    height: 40px;
+    }
     .mockup .smallBox {
-    width: 300px;
-}
+    width: 400px;
+    }
     .slide .mockup:nth-child(1),
     .slide .mockup:nth-child(2) {
     width: 100%;
     height: 100%;
-}
+    }
     .slide .mockup:nth-child(3) {
-        left: 95%;
+    left: 95%;
     }
     .slide .mockup:nth-child(4){
-        left: calc(95% + 100px);
+    left: calc(85% + 80px);
     }
     .slide .mockup:nth-child(n + 5) {
-        left: calc(85% + 50px);
-        opacity: 0;
+    left: calc(85%);
     }
     .smallBox .name {
-        font-size: 10px;
-        margin-top: 1px;
+    font-size: 10px;
+    margin-top: 1px;
     }
     h5 {
-        font-size: 15px;
-        color: #0622bd;
-        
-        
+    font-size: 15px;
     }
     .smallBox .des {
-        margin-top: 10px;
-        margin-left: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
     }
     .smallBox button {
-        padding: 5px 10px;
-        margin-top: 5px;
-        margin-left: 2px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-left: 2px;
     }
     h4 {
-        margin-left: 250px;
+    margin-left: 250px;
     }
 }
