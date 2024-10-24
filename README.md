@@ -4,9 +4,9 @@
 
 <h2>Description</h2>
 
-I'm Natalya, a web developer with experience in creating websites and web applications.
-I specialize in JavaScript and have professional experience with HTML/CSS, BootStrap, Gsap, Figma. I strive to constantly learn and am currently learning React.
-Check my work in my portfolio.
+I am Natalia, a web developer with experience in creating websites and web applications.
+I am a Fullstuck developer and have professional experience with HTML/CSS, JavaScript, BootStrap, Gsap, Figma, React, Redux, Node, MongoDB, UI/UX Design I strive to constantly learn and learn something new, Now I plan to learn Flutter .
+Check out my work in my portfolio.
 
 <h2>Information</h2>
 <h4>This portfolio-website create with HTML/CSS/JavaScript</h4>
