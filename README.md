@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://nataliaten-portfolio.netlify.app">Portfolio-site</a></h1>
 
-<img src="https://github.com/Tataatat13/portfolio-site/blob/master/smartmockups_lwkpu6sz.jpg"/>
+<img src="https://github.com/Tataatat13/portfolio-site/blob/master/MyCollages.jpg"/>
 
 <h2>Description</h2>
 
