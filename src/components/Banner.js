@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { BsArrowRightCircle } from "react-icons/bs";
 import headerImg from "../assets/img/head img.svg";
@@ -9,10 +9,10 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting]= useState(false);
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [text, setText] = useState('');
-    const toRotate = ["Natalia", "Web Developer"];
+    /*const toRotate = ["Natalia", "Web Developer"];*/
     const period = 2000;
-
-    useEffect(() => {
+    const toRotate = useMemo(() => ["Natalia", "Web Developer"], []);
+   /* useEffect(() => {
         let ticker = setInterval(() => {
             tick();
         }, delta);
@@ -40,6 +40,38 @@ export const Banner = () => {
             setDelta(500);
         }
     }
+    */
+    const tick = useCallback(() => {
+        let i = loopNum % toRotate.length;
+        let fullText = toRotate[i];
+        let updateText = isDeleting
+            ? fullText.substring(0, text.length - 1)
+            : fullText.substring(0, text.length + 1);
+    
+        setText(updateText);
+    
+        if (isDeleting) {
+            setDelta(prevDelta => prevDelta / 2);
+        }
+        if (!isDeleting && updateText === fullText) {
+            setIsDeleting(true);
+            setDelta(period);
+        } else if (isDeleting && updateText === '') {
+            setIsDeleting(false);
+            setLoopNum(loopNum + 1);
+            setDelta(500);
+        }
+    }, [loopNum, toRotate, text, isDeleting, period]);
+    
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            tick();
+        }, delta);
+    
+        return () => {
+            clearInterval(ticker);
+        };
+    }, [tick, delta]);
     
     
     return (
